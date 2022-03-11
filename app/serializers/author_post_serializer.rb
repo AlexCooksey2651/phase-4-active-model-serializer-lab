@@ -1,5 +1,5 @@
 class AuthorPostSerializer < ActiveModel::Serializer
-  attributes :title
+  attributes :title, :short_content
 
   def short_content
     "#{self.object.content[0..39]}..."
